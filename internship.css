@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #111 !important;
+  background: #222 !important;
 }
 body::-webkit-scrollbar {
   width: 0.4em;
@@ -100,57 +100,134 @@ a {
 }*/
 
 /*-----------------------navbar end------------------------------------------->*/
-/*----------------------------table start-------*/
-table {
-  border: 2px solid #555 !important;
-  background-color: #222;
-  text-align: center;
-}
-table.table-bordered {
-  border: 2px solid #555 !important;
-}
-table thead {
-  border: none !important;
-}
-thead th {
-  border: 2px solid #555 !important;
-  text-align: center;
-  background-color: #222;
-  color: rgb(54, 214, 54);
-  border: none;
-}
-tbody tr,
-th,
-td {
-  border: 2px solid #555 !important;
-}
-ul {
-  list-style: none;
-}
-ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-  background-color: #111;
-}
-ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
-}
-ul.breadcrumb li + li:before {
-  padding: 8px;
+/*----------------------left  cards-----------------------------------*/
+
+.card {
+  margin: 10px;
+  background: #111 !important;
   color: white;
-  content: ">";
-}
-ul.breadcrumb li a {
-  color: rgb(54, 214, 54);
-  text-decoration: none;
-}
-ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
 }
 
-/*---------------table end----------------*/
+.view a:hover {
+  text-decoration: underline;
+}
+.viewall {
+  color: #1da1f2;
+  /*color: #007bff;*/
+}
+.docs button {
+  border: 1px solid #1da1f2 !important;
+  border-radius: 5px;
+  color: #1da1f2;
+}
+.card-header {
+  color: #36d636;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.speak input[type="text"] {
+  border: none;
+  outline: none;
+}
+.schedule {
+  overflow-y: scroll;
+  height: 60vh;
+}
+.schedule::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+.schedule::-webkit-scrollbar-thumb {
+  background-color: rgb(155, 148, 148);
+  border-radius: 5px;
+  border: none;
+}
+
+.icons i {
+  color: white;
+}
+.btns button {
+  background: #111;
+  color: white;
+  border-radius: 50px;
+  border: 1px solid #555;
+}
+.srch input[type="search"] {
+  background: #333;
+  border-radius: 0;
+  border: 1px solid #333;
+}
+.srch .btn.btn-search {
+  background: #1da1f2 !important;
+}
+.dropdown-menu a {
+  color: white;
+}
+
+/* rounded card */
+.card {
+  border-radius: 10px;
+
+  border: 0.5px solid #444;
+}
+.card a i {
+  font-size: 22px;
+}
+.cards .card-body {
+  padding: 5px 3px !important;
+}
+.sharebtm {
+  font-weight: bold;
+  color: white !important;
+}
+
+/* second card */
+.name {
+  font-size: large;
+  font-weight: bold;
+}
+.schl {
+  font-size: small;
+  font-weight: 500;
+  line-height: 1em;
+}
+/* see more */
+#text {
+  display: none;
+}
+a.morelink {
+  color: #1da1f2;
+}
+a:visited {
+  color: #1da1f2;
+}
+a {
+  color: #0254eb;
+}
+
+a.morelink {
+  text-decoration: none;
+  outline: none;
+}
+.morecontent span {
+  display: none;
+}
+.comment {
+  background-color: #f0f0f0;
+  margin: 10px;
+}
+.fa-ellipsis-h {
+  color: white;
+  font-size: initial !important;
+}
+/* card header bg remove */
+
+.md-sec::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space for middle secction */
+}
 
 .left,
 .right {
@@ -240,8 +317,11 @@ ul.breadcrumb li a:hover {
     height: auto !important;
     overflow: hidden;
   }
-  ul.breadcrumb li {
-    font-size: 14px !important;
+  .card {
+    margin: 5px;
+  }
+  .md-sec {
+    margin-bottom: 9vh;
   }
 }
 @media screen and (max-height: 450px) {
